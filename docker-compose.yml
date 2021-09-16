@@ -1,0 +1,10 @@
+version: '3.5'
+
+services:
+  react-devops:
+    image: inendless.azurecr.io/react-devops
+    ports:
+      - 8080:80
+    build:
+      context: .
+      dockerfile: Dockerfile
